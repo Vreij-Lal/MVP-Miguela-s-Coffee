@@ -1,15 +1,15 @@
 //Connection to database
-
+const dotenv = require("dotenv");
+dotenv.config();
 //connecting to mongodb via mongoose
 const mongoose = require('mongoose');
 
-const dotenv = require("dotenv")
-dotenv.config();
+
 
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb+srv://vreijlal:123571833@cluster0.k6snds9.mongodb.net/?retryWrites=true&w=majority")
+  await mongoose.connect(process.env.DATABASE_PASSWORD)
 }
 
 module.exports = mongoose;
