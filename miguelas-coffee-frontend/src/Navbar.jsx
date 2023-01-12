@@ -1,12 +1,16 @@
 function Navbar() {
     return(
-        <nav>
-            <a href="/home">Home</a>
-            <a href="/aboutUs">About Us</a>
-            <a href="/menu">Menu</a>
-            <a href="/galley">Gallery</a>
-            <a href="/contactUs">Contact us</a>
-        </nav>
+        <header>
+            <nav className="navbar">
+                <ul className="navbar-list">
+                    <li className="navbar-list-items"><a className="navbar-link" href="/home">Home</a></li>
+                    <li className="navbar-list-items"><a className="navbar-link" href="/menu">Menu</a></li>
+                    <li className="navbar-list-items">Logo</li>
+                    <li className="navbar-list-items"><a className="navbar-link" href="/aboutUs">About Us</a></li>
+                    <li className="navbar-list-items"><a className="navbar-link" href="/contactUs">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 

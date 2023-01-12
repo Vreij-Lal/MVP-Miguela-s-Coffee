@@ -1,0 +1,66 @@
+/*STYLING FOR NAVBAR*/
+.navbar-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-list-items{
+    list-style-type: none;
+}
+.navbar-link{
+    text-decoration: none;
+    color: black;
+}
+
+/*STYLING FOR LOGIN/SIGNUP SECTION*/
+.login-signup-section{
+    border: 1px solid black;
+    display: flex;
+}
+.login-form{
+    
+}
+.signup-form{
+
+}
+
+/*STYLING FOR WHOWEARE SECTION*/
+.who-we-are-section{
+    border: 1px solid black;
+}
+
+/*STYLING FOR TYPES OF COFFEE SECTION*/
+.types-of-coffee-section{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.types-of-coffee-card{
+    border: solid 1px black;
+}
+
+/*STYLING FOR COMING SOON SECTION*/
+.coming-soon-section{
+    border: 1px solid black;
+}
+
+/*STYLING FOR IMAGES GRID SECTION*/
+.images-grid-section{
+    border: 1px solid black;
+}
+
+/*STYLING FOR FOOTER SECTION*/
+.footer-container{
+    text-align:center;
+}
+.footer-link{
+    text-decoration: none;
+}
+.footer-icon-link{
+    font-size: 2rem;
+    padding: 2em 2em;
+    color: black;
+}
+.footer-list-item{
+    list-style-type: none;
+    color: black;
+}

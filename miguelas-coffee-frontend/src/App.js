@@ -1,7 +1,6 @@
 import HomePage from "./HomePage";
 import AboutUs from "./AboutUs";
 import Menu from "./Menu";
-import Gallery from "./Gallery";
 import ContactUs from "./ContactUs";
 //importing router
 import {
@@ -9,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import "./style.css"
 
 
 
@@ -30,10 +30,6 @@ function App() {
     {
       path:"/menu",
       element:<Menu/>
-    },
-    {
-      path:"/galley",
-      element:<Gallery/>
     },
     {
       path:"/contactUs",
