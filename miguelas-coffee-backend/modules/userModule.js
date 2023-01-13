@@ -1,10 +1,10 @@
 const mongoose = require("./connection.js");
 
 const UserSchema = new mongoose.Schema({
-    userName: String,
+    username: String,
     password : String
 });
 
-const Users = mongoose.model("users", UserSchema);
+const Users = mongoose.model("user", UserSchema);
 
 module.exports = Users;

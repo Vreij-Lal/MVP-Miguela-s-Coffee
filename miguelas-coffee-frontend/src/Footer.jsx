@@ -4,10 +4,10 @@ function Footer(){
             <div className="footer-container">
 
                 <div className="footer-row">
-                    <a href="#" className="footer-icon-link"><i class="fa fa-facebook"></i></a>
-                    <a href="#" className="footer-icon-link"><i class="fa fa-instagram"></i></a>
-                    <a href="#" className="footer-icon-link"><i class="fa fa-youtube"></i></a>
-                    <a href="#" className="footer-icon-link"><i class="fa fa-twitter"></i></a>
+                    <a href="#" className="footer-icon-link"><i className="fa fa-facebook"></i></a>
+                    <a href="#" className="footer-icon-link"><i className="fa fa-instagram"></i></a>
+                    <a href="#" className="footer-icon-link"><i className="fa fa-youtube"></i></a>
+                    <a href="#" className="footer-icon-link"><i className="fa fa-twitter"></i></a>
                 </div>
 
                 <div class="row">

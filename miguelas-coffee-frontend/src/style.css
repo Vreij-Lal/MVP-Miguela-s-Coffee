@@ -12,16 +12,17 @@
 }
 
 /*STYLING FOR LOGIN/SIGNUP SECTION*/
-.login-signup-section{
+.signup-login-section{
     border: 1px solid black;
     display: flex;
-}
-.login-form{
-    
 }
 .signup-form{
 
 }
+.login-form{
+    
+}
+
 
 /*STYLING FOR WHOWEARE SECTION*/
 .who-we-are-section{
