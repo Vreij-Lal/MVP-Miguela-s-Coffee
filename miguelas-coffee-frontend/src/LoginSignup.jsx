@@ -5,17 +5,19 @@ function LoginSignup(){
     let [username, setUsername] = useState("");
     let [password, setPassword] = useState("");
 
-    function signup(){
+   function signup (){
         axios.post("http://localhost:3636/user/signup", {username:username, password:password})
-             .then(({data}) => {
-                if(data.message !== true){
-                    alert(data.message);
-                }
-             });
+        .then(({data}) => {
+            alert(data.message);
+        }).catch((err) => {console.log(err)})
+
     }
 
     function login(){
-        axios.post("http://localhost:3636/user/signup", {username:username, password:password})
+        axios.post("http://localhost:3636/user/login", {username:username, password:password})
+        .then(({data}) => {
+            alert(data.message);
+        }).catch((err) => {console.log(err)})
     }
 
     return(
@@ -38,12 +40,14 @@ function LoginSignup(){
                     </div>
 
                     <div>
-                        <button onClick={() => {signup()}}>Signup</button>
+                        <button id="signup-button" onClick={() => {signup()}}>Signup</button>
                     </div>
-
             </form>
 
 
+            <div id="signup-login-section-or-section">
+                <h1>OR</h1>
+            </div>
 
 
 
@@ -59,7 +63,7 @@ function LoginSignup(){
                     </div>
                 </div>
                 <div>
-                    <button onClick={() => {login()}}>Login</button>
+                    <button id="login-button" onClick={() => {login()}}>Login</button>
                 </div>
             </form>
 
