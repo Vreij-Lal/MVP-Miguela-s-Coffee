@@ -18,7 +18,7 @@ const login = async (req, res) => {
     let user = await User.findOne({username:req.body.username});
     if (user){
         if(user.password === req.body.password){
-        res.send({message:"Welcome"});
+        res.send({message:true});
         }
         else{
             res.send({message:"wrong password"});

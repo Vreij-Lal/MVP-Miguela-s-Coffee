@@ -10,7 +10,7 @@ function Footer(){
                     <a href="#" className="footer-icon-link"><i className="fa fa-twitter"></i></a>
                 </div>
 
-                <div class="row">
+                <div>
                 <ul>
                     <li className="footer-list-item"><a href="#" className="footer-link">Contact us</a></li>
                     <li className="footer-list-item"><a href="#" className="footer-link">Our Services</a></li>
@@ -20,8 +20,8 @@ function Footer(){
                 </ul>
                 </div>
 
-                <div class="row">
-                    All rights reserved
+                <div className="footer-reserved-rights-text">
+                Copyright © 2023. All rights reserved.
                 </div>
 
             </div>
