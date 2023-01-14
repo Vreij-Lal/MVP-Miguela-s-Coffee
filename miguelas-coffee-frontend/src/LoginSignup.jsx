@@ -24,17 +24,17 @@ function LoginSignup(){
         <section className="signup-login-section">
 
 
-            <form className="signup-form">
+            {/*<form className="signup-form">
                 <h1>Signup</h1>
 
                     <div>
 
                         <div>
-                        <input type="name" placeholder="Username" onChange={(e) => {setUsername(e.target.value)}}/>
+                        <input className="login-inputs" type="name" placeholder="username" onChange={(e) => {setUsername(e.target.value)}}/>
                         </div>
             
                         <div>
-                            <input type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                            <input className="login-inputs" type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                         </div>
 
                     </div>
@@ -47,7 +47,7 @@ function LoginSignup(){
 
             <div id="signup-login-section-or-section">
                 <h1>OR</h1>
-            </div>
+            </div>*/}
 
 
 
@@ -55,20 +55,24 @@ function LoginSignup(){
                 <h1>Login</h1>
                 <div>
                     <div>
-                    <input type="name" placeholder="username" onChange={(e) => {setUsername(e.target.value)}}/>
+                        <label htmlFor="" className="input-labels">Username</label>
+                        <input className="login-inputs" type="name" placeholder="username" onChange={(e) => {setUsername(e.target.value)}}/>
                     </div>
         
                     <div>
-                        <input type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                    <label htmlFor="" className="input-labels">Password</label>
+                        <input className="login-inputs" type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                     </div>
                 </div>
                 <div>
                     <button id="login-button" onClick={() => {login()}}>Login</button>
                 </div>
             </form>
-
-
-
+            <div className="signup-section">
+                <h1 className="signup-section-header-one">Welcome To Login</h1>
+                <h4 className="signup-section-header-four">Don't have an account?</h4>
+                <button className="signup-button">Sign Up</button>
+            </div>
         </section>
     );
 }
