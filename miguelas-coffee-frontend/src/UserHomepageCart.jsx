@@ -30,25 +30,26 @@ function UserHomepageCart({cart, setCart, handleChange}){
         {cart.map((item) => (
           <div key={item.id} className="user-homepage-cart-item">
 
-                <div>
+                <div className="user-homepage-cart-images-container">
                     <img className="user-homepage-cart-images" src={item.img} alt=""/>
+                    
                 </div>
 
-                <div>
-                    <button  onClick={() => handleChange(item, 1)}>+</button>
-                    <button>{item.amount}</button>
-                    <button onClick={() => handleChange(item, -1)}>-</button>
+                <div className="user-homepage-description-container">
+                    <p className="user-homepage-description-container-paragraph">{item.name}</p>
+                    <button className="user-cart-btn" onClick={() => handleChange(item, 1)}>+</button>
+                    <button id="user-cart-amount-btn">{item.amount}</button>
+                    <button className="user-cart-btn" onClick={() => handleChange(item, -1)}>-</button>
                 </div>
 
-                <div>
-                    <span></span>
+                <div  className="user-homepage-menu-button-container">
                     <button className="user-homepage-menu-buttons" onClick={() => handleRemove(item.id)}>Remove</button>
                 </div>
           </div>
         ))}
 
         <div className="cart-total-section">
-          <div className="cart-total-section-text">Total Price of your Cart</div>
+          <div className="cart-total-section-text">Total:</div>
           <div className="cart-total-section-price">$ - {price}</div>
         </div>
 

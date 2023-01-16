@@ -197,6 +197,7 @@
     padding:0.5em;
     border-radius: 1em;
     cursor: pointer;
+    color: #FAB8D2;
 }
 
 
@@ -281,17 +282,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*POPUP MODAL STYLING*/
 body.active-modal {
     overflow-y: hidden;
@@ -369,7 +359,7 @@ body.active-modal {
 
 /*MENU STYLING*/
 
-.cart-container{
+/*.cart-container{
     display: flex;
     width:40%;
     overflow-y: scroll;
@@ -402,7 +392,7 @@ body.active-modal {
 }
 .checkout-section{
 
-}
+}*/
 
 
 
@@ -421,12 +411,13 @@ body.active-modal {
     background-image: url("../src/images/user-homepage/b.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0em 1em 0em 1em;
+    margin: 1em 1em 0em 1em;
     height: 100vh;
+    background-color: white;
 
 }
 .user-homepage-navbar{
-    height: 3rem;
+    height: 7rem;
     width: 100%;
 }
 .user-homepage-navbar-section{
@@ -434,54 +425,104 @@ body.active-modal {
     height: 100%;
     border: 1px solid black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: #E04682;
     
 }
+.user-homepage-navbar-header{
+    background: transparent;
+    font-size: 2em;
+    color: #FAB8D2;
+}
 .user-homepage-menu-section{
-
     display: grid;
     grid-template-columns: 8em 8em 8em;
     grid-template-rows: 10em 10em 10em;
-
+    gap: 1em;
+    background-color: white;
 }
 .user-homepage-menu-cards{
-    border: #E04682 1px solid;
     display: flex;
     flex-direction: column;
+    background-color: white;
+    
 }
 .user-homepage-menu-cards-images{
     width: 50%;
     height: 5rem;
 }
+.user-homepage-description{
+    background-color: white;
+}
+.user-homepage-description-items{
+    background-color: white;
+}
 .user-homepage-cart-section{
-    border: 1px solid black;
+    background-color: white;
     width: 30%;
     display: grid;
     grid-template-columns: 8em 8em 8em;
     grid-template-rows: 10em 10em 10em;
 }
 .user-homepage-cart-item{
-    border: solid 1px #E04682;
-    
+    background-color: white;
+}
+.user-homepage-cart-images-container{
+    background-color: white;
+}
+.user-homepage-description-container{
+    background-color: white;
+}
+.user-homepage-description-container-paragraph{
+    background-color: white;
 }
 .user-homepage-cart-images{
     width: 50%;
     height: 5rem;
+    background-color: white;
+}
+.user-homepage-menu-button-container{
+    background-color: white;
 }
 .user-homepage-menu-buttons{
     margin-top: 0.5em;
     padding: 0.25em;
     border-radius: 0.8em;
     background-color: #E04682;
+    color: #FAB8D2;
+    border: none;
+    cursor: pointer;
 }
 .cart-total-section{
-    border: 1px solid #E04682 ;
+    background-color: white;
 }
 .cart-total-section-text{
-    border: 1px solid #E04682 ;
+    margin-top: 0.5em;
+    border: 1px solid #E04682;
+    background-color: #E04682;
+    font-size: 1.8rem;
+    color: #FAB8D2;
 }
 .cart-total-section-price{
-    border: 1px solid #E04682 ;
+    border: 1px solid #E04682;
+    background-color: white;
+    font-size: 1.5rem;
+    background-color: #E04682;
+    color: #FAB8D2;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+.user-cart-btn{
+    background-color: #E04682;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    color: #FAB8D2;
+    border: none;
+}
+#user-cart-amount-btn{
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border-color: #FAB8D2;
 }

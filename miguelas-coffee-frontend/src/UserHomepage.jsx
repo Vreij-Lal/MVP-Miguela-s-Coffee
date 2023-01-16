@@ -43,7 +43,7 @@ function UserHomepage(){
         <>
         <Navbar/>
 
-        <UserHomepageNavbar/>
+        <UserHomepageNavbar username={username}/>
         
         <section className="user-homepage-container">
             <UserHomepageMenu handleClick={handleClick}/>

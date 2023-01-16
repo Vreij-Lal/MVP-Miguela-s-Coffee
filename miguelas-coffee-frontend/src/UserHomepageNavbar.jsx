@@ -1,19 +1,16 @@
-function UserHomepageNavbar(){
+function UserHomepageNavbar({username}){
     return(
         <nav className="user-homepage-navbar">
             <div className="user-homepage-navbar-section">
-  
-                <div>
-                    Menu
+                
+                <div className="user-homepage-navbar-header">
+                    Welcome back {username}!
                 </div>
-    
-               
-                    <div>
-                        <i className="fas fa-cart-plus"></i>
-                    </div>
-                    
-               
-          
+
+                <div className="user-homepage-navbar-header">
+                    fill in your cart and get your coffee right away!
+                </div>
+
             </div>
       </nav>
     );
