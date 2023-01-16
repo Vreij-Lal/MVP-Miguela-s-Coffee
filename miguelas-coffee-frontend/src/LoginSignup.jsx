@@ -1,10 +1,14 @@
 import axios from "axios";
 import { useState } from "react";
-
+import UserHomepage from "./UserHomepage";
+import { useNavigate } from "react-router-dom";
+  
 function LoginSignup(){
     let [username, setUsername] = useState("");
     let [password, setPassword] = useState("");
     let [modal, setModal] = useState(false);
+
+    const navigate = useNavigate();
 
    function signup (){
         axios.post("http://localhost:3636/user/signup", {username:username, password:password})
@@ -14,11 +18,13 @@ function LoginSignup(){
 
     }
 
+    
     function login(){
         axios.post("http://localhost:3636/user/login", {username:username, password:password})
         .then(({data}) => {
             if(data.message == true){
-                alert("welcome");
+                localStorage.setItem("user" , username )
+                navigate("/UserHomepage")
             }
             else{
                 alert(data.message);
@@ -37,7 +43,7 @@ function LoginSignup(){
             {modal ? (
                 <section className="signup-login-section">
 
-                <form className="login-form">
+                <div className="login-form">
                     <h1>Login</h1>
                     <div>
                         <div>
@@ -53,7 +59,7 @@ function LoginSignup(){
                     <div>
                         <button id="login-button" onClick={() => {login()}}>Login</button>
                     </div>
-                </form>
+                </div>
 
 
 
@@ -67,7 +73,7 @@ function LoginSignup(){
                 <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <form className="signup-form">
+            <div className="signup-form">
                 <h1>Signup</h1>
 
                     <div>
@@ -85,7 +91,7 @@ function LoginSignup(){
                     <div>
                         <button id="signup-button" onClick={() => {signup()}}>Signup</button>
                     </div>
-            </form>
+            </div>
             <button className="close-modal" onClick={toggleModal}>
               CLOSE
             </button>
@@ -94,10 +100,10 @@ function LoginSignup(){
 
 
             </section>
-            ) : (
+            ) :(
                 <section className="signup-login-section">
 
-                <form className="login-form">
+                <div className="login-form">
                     <h1>Login</h1>
                     <div>
                         <div>
@@ -113,7 +119,7 @@ function LoginSignup(){
                     <div>
                         <button id="login-button" onClick={() => {login()}}>Login</button>
                     </div>
-                </form>
+                </div>
                 <div className="signup-section">
                     <h1 className="signup-section-header-one">Welcome To Login</h1>
                     <h4 className="signup-section-header-four">Don't have an account?</h4>

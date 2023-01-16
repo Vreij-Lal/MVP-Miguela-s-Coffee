@@ -7,6 +7,7 @@ import ComingSoon from "./ComingSoon";
 import ImagesGrid from "./ImagesGrid";
 import Footer from "./Footer";
 
+
 function HomePage(){
     return (
         <main>
@@ -16,7 +17,7 @@ function HomePage(){
             <TypesOfCoffee/>
             <ComingSoon/>
             <ImagesGrid/>
-            <Footer/>   
+            <Footer/>
         </main>
     );
 }
