@@ -526,3 +526,48 @@ body.active-modal {
     border-radius: 0.5rem;
     border-color: #FAB8D2;
 }
+
+/*NAVLINK MENU PAGE STYLING*
+/*************************/
+
+.nav-link-menu-page-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #E04682;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+
+}
+.nav-link-menu-header{
+    background-color: white;
+    color: #E04682;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.nav-link-menu-img{
+    border: none; 
+    height: 25rem;
+    width: 20rem;
+}
+
+/*NAVLINK ABOUT US STYLING*
+/*************************/
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.about-us-header{
+    color: #E04682;
+    padding-top: 1rem;
+
+}
+.about-us-paragraph{
+    margin-top: 1rem;
+    inline-size: 17rem;
+    writing-mode: horizontal-tb;
+}
