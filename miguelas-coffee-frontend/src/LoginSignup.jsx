@@ -89,7 +89,7 @@ function LoginSignup(){
                     </div>
 
                     <div>
-                        <button id="signup-button" onClick={() => {signup()}}>Signup</button>
+                        <button className="signup-button" onClick={() => {signup()}}>Signup</button>
                     </div>
             </div>
             <button className="close-modal" onClick={toggleModal}>
@@ -104,7 +104,7 @@ function LoginSignup(){
                 <section className="signup-login-section">
 
                 <div className="login-form">
-                    <h1>Login</h1>
+                    <h1 className="login-form-header">Login</h1>
                     <div>
                         <div>
                             <label htmlFor="" className="input-labels">Username</label>
@@ -117,7 +117,7 @@ function LoginSignup(){
                         </div>
                     </div>
                     <div>
-                        <button id="login-button" onClick={() => {login()}}>Login</button>
+                        <button className="login-button" onClick={() => {login()}}>Login</button>
                     </div>
                 </div>
                 <div className="signup-section">
