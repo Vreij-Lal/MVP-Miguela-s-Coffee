@@ -5,7 +5,7 @@
 ### Description:
 An e-commerce online coffee shop MVP, allowing clients to order coffee online and have it delivered to them, at the comfort of their homes</br>
 
-<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/homepage.png" width = '500' align = "right"/>e
+<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/homepage.png" width = '500' align = "right"/>
 
 ### Features:
 :heavy_check_mark: shopping cart </br>
@@ -44,3 +44,6 @@ Make sure you have own credentials in server/.env for:
 
 ### Note: 
 The project is an MVP created in one week. I will continue working on it in the near future, by adding additional features and creating a 3d animated coffee creator and overall development to have a fully functioning coffee shop.
+
+<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/cart.png" width = '500' align = "left"/>
+<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/menu.png" width = '500' align = "right"/>
