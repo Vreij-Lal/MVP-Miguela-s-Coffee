@@ -1,4 +1,4 @@
-# Online e-commerce coffee shop:shopping:
+# Online e-commerce coffee shop :shopping:
 
 ### Title: "Miguela's Coffee" 
 
