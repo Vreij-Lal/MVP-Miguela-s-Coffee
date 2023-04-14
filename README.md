@@ -45,5 +45,5 @@ Make sure you have own credentials in server/.env for:
 ### Note: 
 The project is an MVP created in one week. I will continue working on it in the near future, by adding additional features and creating a 3d animated coffee creator and overall development to have a fully functioning coffee shop.
 
-<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/cart.png" width = '500' align = "left"/>
+<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/cart.png" width = '500'/>
 <img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/menu.png" width = '500' align = "right"/>
