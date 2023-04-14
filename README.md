@@ -5,6 +5,8 @@
 ### Description:
 An e-commerce online coffee shop MVP, allowing clients to order coffee online and have it delivered to them, at the comfort of their homes</br>
 
+<img src="https://github.com/Vreij-Lal/MVP-Miguela-s-Coffee/blob/main/homepage.png" width = '500' align = "right"/>e
+
 ### Features:
 :heavy_check_mark: shopping cart </br>
 :heavy_check_mark: user sign up and login system </br>
